@@ -13,11 +13,11 @@
 
 Cada pasta representa um dia de aprendizagem:
 
-*📁 dia-1-hello-world → Primeiro programa em C++
-*📁 dia-2-variaveis → Uso de variáveis
-*📁 dia-3-if-else → Decisões no código
-*📁 dia-4-loops → Repetições com for e while
-*📁 dia-5-arrays → Trabalhar com listas de dados (arrays)
+* 📁 dia-1-hello-world → Primeiro programa em C++
+* 📁 dia-2-variaveis → Uso de variáveis
+* 📁 dia-3-if-else → Decisões no código
+* 📁 dia-4-loops → Repetições com for e while
+* 📁 dia-5-arrays → Trabalhar com listas de dados (arrays)
 
 ---
 
