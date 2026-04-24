@@ -28,12 +28,12 @@ Neste exemplo, vamos dividir o código em partes menores chamadas **funções**,
 #include <string>
 using namespace std;
 
-// 🔹 Função para mostrar mensagem inicial
+//  Função para mostrar mensagem inicial
 void mostrarBoasVindas(string nome) {
     cout << "Bem-vindo(a), " << nome << "! 😄" << endl;
 }
 
-// 🔹 Função para mostrar menu
+//  Função para mostrar menu
 void mostrarMenu() {
     cout << endl;
     cout << "1 - Correr atras do rato" << endl;
@@ -42,7 +42,7 @@ void mostrarMenu() {
     cout << "0 - Sair" << endl;
 }
 
-// 🔹 Função para processar escolha
+//  Função para processar escolha
 void processarEscolha(int escolha) {
     if (escolha == 1) {
         cout << "Voce correu atras do rato! 🏃" << endl;
