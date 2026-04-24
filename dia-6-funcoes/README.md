@@ -1,65 +1,83 @@
-#  Projeto C++ - Arrays (Dia 5)
+# 💻 Projeto C++ - Funções (Dia 6)
 
 ![C++](https://img.shields.io/badge/C%2B%2B-Programming-blue?style=for-the-badge\&logo=cplusplus)
 ![Beginner Friendly](https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge)
 
 ---
 
-> 💡 **Nota:** Este projeto faz parte da série para iniciantes em C++. Aqui vais aprender a trabalhar com arrays (listas de dados).
+> 💡 **Nota:** Este projeto faz parte da série para iniciantes em C++. Aqui vais aprender a organizar o código usando funções.
 
 ---
 
 ##  Sobre o Projeto
 
-Neste exemplo, vamos guardar vários valores numa lista e percorrê-los usando loops.
+Neste exemplo, vamos dividir o código em partes menores chamadas **funções**, tornando-o mais organizado e reutilizável.
 
-Objetivo:
+ Objetivo:
 
-* Aprender o que são arrays
-* Guardar múltiplos dados
-* Percorrer dados com `for`
+* Criar funções
+* Reutilizar código
+* Organizar melhor o programa
 
 ---
 
-##  Código
+## Código
 
-```cpp
+```cpp id="6w9t2v"
 #include <iostream>
 #include <string>
 using namespace std;
 
+// 🔹 Função para mostrar mensagem inicial
+void mostrarBoasVindas(string nome) {
+    cout << "Bem-vindo(a), " << nome << "! 😄" << endl;
+}
+
+// 🔹 Função para mostrar menu
+void mostrarMenu() {
+    cout << endl;
+    cout << "1 - Correr atras do rato" << endl;
+    cout << "2 - Comer queijo" << endl;
+    cout << "3 - Dormir" << endl;
+    cout << "0 - Sair" << endl;
+}
+
+// 🔹 Função para processar escolha
+void processarEscolha(int escolha) {
+    if (escolha == 1) {
+        cout << "Voce correu atras do rato! 🏃" << endl;
+    }
+    else if (escolha == 2) {
+        cout << "Voce comeu queijo 🧀" << endl;
+    }
+    else if (escolha == 3) {
+        cout << "Voce foi dormir 😴" << endl;
+    }
+    else if (escolha == 0) {
+        cout << "Saindo do jogo... 👋" << endl;
+    }
+    else {
+        cout << "Opcao invalida 😅" << endl;
+    }
+}
+
 int main() {
-    // Array de nomes
-    string nomes[3] = {"Tommy", "Jerryzinho", "Spike"};
-
-    // Array de idades
-    int idades[3] = {5, 2, 7};
-
-    cout << "=== PERSONAGENS DO JOGO 🐱🐭 ===" << endl;
-    cout << endl;
-
-    // Mostrar todos os personagens
-    for (int i = 0; i < 3; i++) {
-        cout << "Nome: " << nomes[i] << endl;
-        cout << "Idade: " << idades[i] << " anos" << endl;
-        cout << "------------------------" << endl;
-    }
-
-    cout << endl;
-
-    // Escolher personagem
+    string nome;
     int escolha;
-    cout << "Escolhe um personagem (0, 1 ou 2): ";
-    cin >> escolha;
 
-    cout << endl;
+    cout << "Digite o teu nome: ";
+    cin >> nome;
 
-    if (escolha >= 0 && escolha < 3) {
-        cout << "Voce escolheu: " << nomes[escolha] << endl;
-        cout << "Idade: " << idades[escolha] << " anos" << endl;
-    } else {
-        cout << "Escolha invalida 😅" << endl;
-    }
+    mostrarBoasVindas(nome);
+
+    do {
+        mostrarMenu();
+        cout << "Opcao: ";
+        cin >> escolha;
+
+        processarEscolha(escolha);
+
+    } while (escolha != 0);
 
     return 0;
 }
@@ -69,84 +87,73 @@ int main() {
 
 ##  Explicação do Código
 
-###  O que é um array?
+###  O que é uma função?
 
-Um array é uma estrutura que guarda vários valores do mesmo tipo.
+Uma função é um bloco de código que executa uma tarefa específica.
 
 ---
 
-###  Criar arrays
+###  Criar função
 
-```cpp
-string nomes[3] = {"Tommy", "Jerryzinho", "Spike"};
+```cpp id="wqk3x2"
+void mostrarMenu()
 ```
 
-Guarda 3 nomes numa única variável.
+* `void` → não retorna valor
+* `mostrarMenu` → nome da função
 
 ---
 
-###  Aceder a elementos
+### 🔹 Chamar função
 
-```cpp
-nomes[0]
-nomes[1]
-nomes[2]
+```cpp id="d9xk21"
+mostrarMenu();
 ```
 
-Começa sempre no índice **0**
+Executa a função.
 
 ---
 
-###  Percorrer com loop
+### 🔹 Função com parâmetro
 
-```cpp
-for (int i = 0; i < 3; i++)
+```cpp id="k3m2lp"
+void mostrarBoasVindas(string nome)
 ```
 
-Percorre todos os elementos do array.
+Recebe dados (neste caso, o nome).
 
 ---
 
-### Validação
+### 🔹 Reutilização
 
-```cpp
-if (escolha >= 0 && escolha < 3)
-```
-
-Garante que o utilizador escolheu um valor válido.
+A mesma função pode ser usada várias vezes sem repetir código.
 
 ---
 
-##  Como executar
+## ⚙️ Como executar
 
-```bash
-g++ arrays.cpp -o arrays
-./arrays
+```bash id="b7t4xm"
+g++ funcoes.cpp -o funcoes
+./funcoes
 ```
 
 ---
 
 ## Exemplo de execução
 
-```
-=== PERSONAGENS DO JOGO ===
+```id="z2y9pd"
+Digite o teu nome: Erica
 
-Nome: Tommy
-Idade: 5 anos
-------------------------
+Bem-vindo(a), Erica!
 
-Nome: Jerryzinho
-Idade: 2 anos
-------------------------
+1 - Correr atras do rato
+2 - Comer queijo
+3 - Dormir
+0 - Sair
 
-Nome: Spike
-Idade: 7 anos
-------------------------
+Opcao: 2
 
-Escolhe um personagem (0, 1 ou 2): 1
-
-Voce escolheu: Jerryzinho
-Idade: 2 anos
+Voce comeu queijo 🧀
 ```
 
 ---
@@ -155,23 +162,21 @@ Idade: 2 anos
 
 Neste projeto aprendeste:
 
-* Criar arrays
-* Guardar vários dados
-* Usar loops com arrays
-* Validar entradas
+* Criar funções
+* Organizar código
+* Evitar repetição
 
 ---
 
 ## Próximo passo
 
-No próximo dia:
+ No próximo dia:
 
-* Funções (organizar código)
-* Reutilizar lógica 
+* Mini projeto final (juntando tudo 🔥)
 
 ---
 
-## 👩🏽‍💻 Autora
+## Autora
 
 **Erica Tatiana**
 🚀 Desenvolvedora em evolução
