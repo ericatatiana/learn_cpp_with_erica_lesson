@@ -18,6 +18,9 @@ Cada pasta representa um dia de aprendizagem:
 * 📁 dia-3-if-else → Decisões no código
 * 📁 dia-4-loops → Repetições com for e while
 * 📁 dia-5-arrays → Trabalhar com listas de dados (arrays)
+* 📁 dia-6
+* 📁 dia-7 
+* 📁 dia-8-ficheiros
 
 ---
 
