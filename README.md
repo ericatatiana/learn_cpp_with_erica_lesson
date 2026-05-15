@@ -18,6 +18,14 @@ Cada pasta representa um dia de aprendizagem:
 * 📁 dia-3-if-else → Decisões no código
 * 📁 dia-4-loops → Repetições com for e while
 * 📁 dia-5-arrays → Trabalhar com listas de dados (arrays)
+* 📁 dia-6-funcoes
+* 📁 dia-7-miniprojecto
+* 📁 dia-8-ficheiros
+* 📁 dia-9-leitura-ficheiros
+* 📁 dia-10-vetores
+* 📁 dia-11-funcoes-avancadas
+* 📁 dia-12-struct
+* 📁 dia-13-mini-sistema
 
 ---
 
