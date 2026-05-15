@@ -21,6 +21,11 @@ Cada pasta representa um dia de aprendizagem:
 * 📁 dia-6-funcoes
 * 📁 dia-7-miniprojecto
 * 📁 dia-8-ficheiros
+* 📁 dia-9-leitura-ficheiros
+* 📁 dia-10-vetores
+* 📁 dia-11-funcoes-avancadas
+* 📁 dia-12-struct
+* 📁 dia-13-mini-sistema
 
 ---
 
