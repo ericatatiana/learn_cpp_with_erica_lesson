@@ -1,4 +1,4 @@
-# 💻 Curso de C++ para Iniciantes 🚀
+#  Curso de C++ para Iniciantes 
 
 ![C++](https://img.shields.io/badge/C%2B%2B-Programming-blue?style=for-the-badge\&logo=cplusplus)
 ![Beginner Friendly](https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📚 Estrutura do Curso
+##  Estrutura do Curso
 
 Cada pasta representa um dia de aprendizagem:
 
@@ -26,10 +26,17 @@ Cada pasta representa um dia de aprendizagem:
 * 📁 dia-11-funcoes-avancadas
 * 📁 dia-12-struct
 * 📁 dia-13-mini-sistema
+* 📁dia-14-classes
+* 📁dia-15-construtores
+* 📁dia-16-encapsulamento
+* 📁dia-17-heranca
+* 📁dia-18-ponteiros
+* 📁dia-19-ficheiros-avancados
+* 📁dia-20-projeto-final-avancado
 
 ---
 
-## 📌 Como usar este repositório
+##  Como usar este repositório
 
 1. Escolhe uma aula (pasta)
 2. Abre o `README.md` dentro da pasta
@@ -38,7 +45,7 @@ Cada pasta representa um dia de aprendizagem:
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Este projeto foi criado para:
 
@@ -48,7 +55,7 @@ Este projeto foi criado para:
 
 ---
 
-## 🚀 Como executar os exemplos
+##  Como executar os exemplos
 
 ```bash
 g++ nome_do_ficheiro.cpp -o programa
@@ -57,10 +64,10 @@ g++ nome_do_ficheiro.cpp -o programa
 
 ---
 
-## 👩🏽‍💻 Autora
+##  Autora
 
 **Erica Tatiana**
-🚀 Desenvolvedora em evolução
+ Desenvolvedora em evolução
 
 ---
 
